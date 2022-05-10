@@ -1,0 +1,152 @@
+ul {
+  padding: 0;
+}
+button {
+  border: none;
+  outline: none
+}
+
+.label-and-input-wrapper .label {
+  color: #02363D;
+  font-size: 14px;
+  font-family: Almarai, Regular;
+  margin-bottom: 10px;
+}
+
+.error-placeholder .text {
+  color: red
+}
+
+.label-and-input-wrapper .label .star {
+  margin: 0 2px;
+  color: red
+}
+
+.label-and-input-wrapper .file-input-wrapper {
+  color: #DBDBDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  height: 130px;
+  background-color: #E0CF971A;
+  border: 2px solid #DBDBDB;
+  font-size: 12px;
+}
+
+.label-and-input-wrapper .file-input-wrapper .placeholder-wrapper {
+  margin-top: 10px;
+  color: #02363D;
+  opacity: 0.6;
+}
+
+.label-and-input-wrapper .file-input-wrapper .file-chooser-action {
+  margin-top: 20px;
+  background-color: #158E8D;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.label-and-input-wrapper input {
+  display: none;
+}
+
+/* For UI Place holders */
+.hints-placeholder,
+.error-placeholder {
+  margin-top: 9px;
+  margin-bottom: 22px;
+  color: #A8A8A8;
+  font-size: 12px;
+}
+
+.hints-placeholder .text, 
+.hints-placeholder .text {
+  margin-bottom: 10px;
+}
+
+.list-item {
+  height: 50px;
+  border: 1px solid #DBDBDB;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 11px;
+  margin-bottom: 14px;
+}
+
+.list-item .icon-name-wrapper,
+.list-item .size-delete-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.list-item .icon-name-wrapper .img,
+.list-item .size-delete-wrapper .img {
+  width: 25px;
+  height: 25px;
+}
+
+.list-item .size-delete-wrapper .img {
+  cursor: pointer;
+}
+
+.list-item .icon-name-wrapper .file-name {
+  color: #02363D;
+  font-size: 14px;
+  margin-right: 23px;
+}
+
+.list-item .size-delete-wrapper .size {
+  color: #067377;
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+@media (max-width: 320px) {
+  .label-and-input-wrapper .file-input-wrapper {
+    width: 100%;
+  }
+}
+
+
+.input-wrapper,
+.input-wrapper * {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper {
+  border: 2px solid #DBDBDB;
+  height: 50px;
+}
+
+.input-wrapper .indicator{
+  padding: 16px 10px;
+  outline: none;
+  /* font-size: 16px; */
+  color: #fff;
+  background-color: #158E8D
+}
+
+.input-wrapper .indicator:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.input-wrapper .name-placeholder{
+  padding: 15px 10px;
+  color: #02363D;
+  font-size: 14px;
+  flex: 1;
+}
+
+.input-wrapper .actions{
+  padding: 8px;
+}
+.input-wrapper .actions .action{
+  cursor: pointer;
+
+}

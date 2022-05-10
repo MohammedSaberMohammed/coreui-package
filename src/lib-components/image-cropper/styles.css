@@ -1,0 +1,108 @@
+.input-wrapper,
+.input-wrapper * {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper {
+  border: 2px solid #DBDBDB;
+  height: 50px;
+}
+
+.input-wrapper .indicator{
+  padding: 16px 10px;
+  outline: none;
+  /* font-size: 16px; */
+  color: #fff;
+  background-color: #158E8D
+}
+
+.image-button-placeholder {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.input-wrapper .indicator:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.input-wrapper .name-placeholder{
+  padding: 15px 10px;
+  color: #02363D;
+  font-size: 14px;
+  flex: 1;
+}
+
+.input-wrapper .actions{
+  padding: 8px;
+  margin: 0px 5px
+}
+.input-wrapper .actions .action{
+  cursor: pointer;
+
+}
+
+.pointer {
+  cursor:pointer
+}
+
+.label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.label .star {
+  color: red
+}
+
+.cropped-image-placeholder,
+.empty-image-placeholder {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+}
+
+.empty-image-placeholder {
+  align-items: center;
+  justify-content: center;
+}
+
+.cropped-image-placeholder {
+  position: relative;
+  /* flex-direction: ; */
+}
+
+.cropped-image-placeholder .cropped-image {
+  width: 100%;
+  height: 100%;
+}
+.cropped-image-placeholder .actions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background: rgba(255, 255, 255, .5);
+}
+
+.cropped-image-placeholder .actions img{
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.hints-placeholder,
+.error-placeholder {
+  margin-top: 9px;
+  margin-bottom: 22px;
+  color: #A8A8A8;
+  font-size: 12px;
+}
+
+.error-placeholder .text {
+  color: red
+}
