@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://najizcdn-test.moj.gov.sa/n2-test/portal/individual/css/variables.min.css?v=33">
+<!-- <link rel="stylesheet" href="http://127.0.0.1:5500/Portal/Najiz.Cdn/wwwroot/portal/individual/css/variables.min.css"> -->
+<link rel="stylesheet" href="https://najizcdn-test.moj.gov.sa/n2-test/portal/shared/css/base-layout.min.css">
+<!-- <link rel="stylesheet" href="http://127.0.0.1:5500/Portal/Najiz.Cdn/wwwroot/portal/shared/css/base-layout.min.css"> -->
+<style>
+  * {
+    font-family: var(--layout-font-family);
+  }
+
+  .v-application .v-application--wrap {
+    min-height: unset;
+  }
+
+  .sbdocs-preview {
+    overflow: unset;
+  }
+
+  .storybook-calendar-wrapper {
+    min-height: 400px;
+  }
+  /* Workarround to hide error message dialog */
+  .sb-errordisplay {
+    display: none !important;
+  }
+
+  .cropped-image-placeholder {
+  position: relative;
+  /* flex-direction: ; */
+}
+
+.cropped-image-placeholder .cropped-image {
+  width: 100%;
+  height: 100%;
+}
+.cropped-image-placeholder .actions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background: rgba(255, 255, 255, .5);
+}
+
+.cropped-image-placeholder .actions img{
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+</style>

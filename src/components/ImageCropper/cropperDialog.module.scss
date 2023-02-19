@@ -1,0 +1,86 @@
+/* Dialog styles */
+.image-wrapper {
+  height: 300px;
+
+  .cropper-container {
+    width: 100% !important;
+  }
+}
+
+.image-canvas {
+  display: block;
+  max-width: 100%;
+}
+
+::v-deep {
+  .modal-container {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+  }
+
+  .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 99%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+  }
+
+  .modal__content {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 10px;
+  }
+}
+
+.modal__title {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+}
+
+.modal__action {
+  border-top: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .save {
+    flex-basis: 70%;
+    color: #fff;
+    background-color: green;
+    padding: 5px;
+    flex-basis: 70%;
+    color: #fff;
+    background-color: #158e8d;
+    padding: 5px;
+  }
+
+  .cancel-action {
+    flex-basis: 25%;
+    color: #fff;
+    background-color: #ae351c;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 576px) {
+  ::v-deep {
+    .modal-container {
+      max-width: 500px;
+      margin: 1.75rem auto;
+    }
+  }
+}
